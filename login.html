@@ -40,7 +40,7 @@
             </div> -->
             <div class="form-actions">
                 <button class="layui-btn  pull-right" lay-submit lay-filter="login"  type="submit" >登录</button> 
-                <button class=" layui-btn layui-btn-warm"><a href="#" class="forgot">注册</a></button>     
+                <button class=" layui-btn layui-btn-warm"><a title="注册" href="javascript:;"  onclick="register('注册','reg.html','4','','400')">注册</a></button>     
             </div>
 
         </form>
@@ -66,6 +66,7 @@
         <div id="changer-set"><i class="iconfont">&#xe696;</i></div>   
     </div>
     <script>
+
         $(function  () {
             layui.use('form', function(){
               var form = layui.form();
@@ -78,9 +79,14 @@
               });
             });
         })
-        
+
+        // 注册
+         function register(title,url,w,h){
+            x_admin_show(title,url,w,h); 
+        }
+       
     </script>
-    <!-- <script>
+    <script>
     //百度统计可去掉
     var _hmt = _hmt || [];
     (function() {
@@ -89,6 +95,6 @@
       var s = document.getElementsByTagName("script")[0]; 
       s.parentNode.insertBefore(hm, s);
     })();
-    </script> -->
+    </script>
 </body>
 </html>
