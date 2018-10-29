@@ -40,7 +40,13 @@
             </div> -->
             <div class="form-actions">
                 <button class="layui-btn  pull-right" lay-submit lay-filter="login"  type="submit" >登录</button> 
-                <button class=" layui-btn layui-btn-warm"><a title="注册" href="javascript:;"  onclick="register('注册','reg.html','4','','400')">注册</a></button>     
+
+                <a class=" layui-btn layui-btn-warm" style="text-decoration:none"  onclick="register('注册','reg.html','600','400')"
+                            href="javascript:;" title="注册">注册
+                                <!-- <i class="layui-icon">&#xe631;</i> -->
+                            </a>
+                            <!-- 这里不知道为什么不能用button，用button，onclick事件会失效 -->
+                <!-- <button class=" layui-btn layui-btn-warm"><a title="注册" href="javascript:;"  onclick="member_add('注册','reg.html','600','400')">注册</a></button>      -->
             </div>
 
         </form>
@@ -84,7 +90,11 @@
          function register(title,url,w,h){
             x_admin_show(title,url,w,h); 
         }
-       
+       /*用户-添加*/
+        // function member_add(title,url,w,h){
+            // alert(url);
+        //     x_admin_show(title,url,w,h);
+        // }
     </script>
     <script>
     //百度统计可去掉
