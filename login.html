@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
 	<meta charset="UTF-8">
-	<title>后台登录-X-admin1.1</title>
+	<title>Backstage-management</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="shortcut icon" href="/favicon.ico" type="image/x-icon" />
     <link rel="stylesheet" href="./css/font.css">
@@ -15,7 +15,7 @@
 
 </head>
 <body>
-    <div class="login-logo"><h1>X-ADMIN V1.1</h1></div>
+    <div class="login-logo"><h1>Backstage-management</h1></div>
     <div class="login-box">
         <form class="layui-form layui-form-pane" action="">
               
@@ -75,9 +75,12 @@
 
         $(function  () {
             layui.use('form', function(){
+                console.log("11111");
               var form = layui.form();
+
               //监听提交
               form.on('submit(login)', function(data){
+                // console.log("122221");
                 layer.msg(JSON.stringify(data.field),function(){
                     location.href='index.html'
                 });
